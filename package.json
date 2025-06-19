@@ -1,0 +1,54 @@
+{
+  "name": "ai-personal-finance-app",
+  "version": "0.1.0",
+  "description": "Web app for budgeting, saving, and investing using AI-powered insights",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "jest",
+    "install-all": "npm install && cd client && npm install",
+    "build": "cd client && npm run build",
+    "docker-build": "docker-compose build",
+    "docker-up": "docker-compose up"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dxaginfo/ai-personal-finance-app-2025.git"
+  },
+  "keywords": [
+    "finance",
+    "ai",
+    "budgeting",
+    "investing",
+    "savings"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dxaginfo/ai-personal-finance-app-2025/issues"
+  },
+  "homepage": "https://github.com/dxaginfo/ai-personal-finance-app-2025#readme",
+  "dependencies": {
+    "@prisma/client": "^5.7.1",
+    "axios": "^1.6.5",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "plaid": "^18.1.0",
+    "redis": "^4.6.12"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2",
+    "prisma": "^5.7.1",
+    "supertest": "^6.3.3"
+  }
+}
